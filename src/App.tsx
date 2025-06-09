@@ -54,7 +54,7 @@ const App: React.FC = () => {
       <p className="text-md md:text-xl mb-8 text-gray-300 text-center max-w-xl font-mono">
         Instantly search and explore GitHub developer profiles by username.
       </p>
-      <div className="flex w-full max-w-[270px]  sm:max-w-md">
+      <div className="flex max-md:flex-col justify-center gap-3.5 w-full max-w-md">
         <input
           type="text"
           value={username}
