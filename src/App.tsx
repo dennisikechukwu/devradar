@@ -54,20 +54,20 @@ const App: React.FC = () => {
       <p className="text-md md:text-xl mb-8 text-gray-300 text-center max-w-xl font-mono">
         Instantly search and explore GitHub developer profiles by username.
       </p>
-      <div className="flex max-md:flex-col justify-center gap-3.5 w-full max-w-md">
+      <div className="flex max-sm:flex-col justify-center max-sm:gap-3.5 w-full max-w-md">
         <input
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Enter GitHub username..."
-          className="flex-grow px-4 py-3 rounded-l-xl text-[#b7a3a3]  border border-blue-300 focus:outline-none"
+          className="flex-grow px-4 py-3 rounded-l-xl max-sm:rounded-xl text-[#b7a3a3]  border border-blue-300 focus:outline-none"
         />
          <button
           onClick={fetchGitHubUser}
           disabled={loading}
           className={`${
             loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
-          } text-white px-6 rounded-r-lg transition font-mono border border-blue-300`}
+          } text-white px-6 rounded-r-lg max-sm:rounded-lg max-sm:py-2.5 transition font-mono border border-blue-300`}
         >
           {loading ? "Searching..." : "Search"}
         </button>
