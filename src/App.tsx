@@ -47,14 +47,14 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col justify-center items-center px-4 text-white">
-      <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-center font-mono ">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center font-mono ">
         Welcome to <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">DevRadar</span>
 
       </h1>
       <p className="text-md md:text-xl mb-8 text-gray-300 text-center max-w-xl font-mono">
         Instantly search and explore GitHub developer profiles by username.
       </p>
-      <div className="flex w-full max-w-md">
+      <div className="flex w-full max-w-sm">
         <input
           type="text"
           value={username}
